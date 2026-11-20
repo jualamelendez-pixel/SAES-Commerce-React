@@ -1,0 +1,81 @@
+/* ==========================================
+   SAES COMMERCE - ESTILOS DE GESTIÓN DE USUARIOS
+========================================== */
+
+.users-container {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Encabezado */
+.users-container header {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 35px;
+}
+
+.users-container header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+/* Contenido principal */
+.users-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.users-content h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.users-content > p {
+  color: #697586;
+  margin-bottom: 25px;
+}
+
+/* Tabla */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table-container th {
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 14px;
+}
+
+.table-container td {
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 14px;
+}
+
+.table-container tbody tr:hover {
+  background-color: #f4f6f9;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 700px) {
+  .users-container {
+    padding: 20px 12px;
+  }
+
+  .users-content {
+    padding: 18px;
+  }
+}

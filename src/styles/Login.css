@@ -1,0 +1,111 @@
+
+/* ==========================================
+   SAES COMMERCE - ESTILOS LOGIN
+========================================== */
+
+/* Contenedor principal */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 40px;
+}
+
+/* Panel de presentación */
+.login-info {
+  max-width: 420px;
+  color: var(--primary-color);
+}
+
+.login-info h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.login-info p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Contenedor del formulario */
+.login-form-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.login-form-container h2 {
+  color: var(--primary-color);
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.login-form-container p {
+  color: #697586;
+  margin-bottom: 25px;
+}
+
+/* Formulario */
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-form-container label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.login-form-container input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+.login-form-container input:focus {
+  border-color: var(--secondary-color);
+}
+
+/* Botón de ingreso */
+.login-form-container button {
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login-form-container button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Adaptación a celulares */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .login-info {
+    text-align: center;
+  }
+
+  .login-info h1 {
+    font-size: 30px;
+  }
+}

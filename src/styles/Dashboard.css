@@ -1,0 +1,100 @@
+/* ==========================================
+   SAES COMMERCE - ESTILOS DEL DASHBOARD
+========================================== */
+
+.dashboard-container {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Encabezado */
+.dashboard-header {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+/* Bienvenida */
+.dashboard-welcome {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  padding: 25px;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-welcome h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.dashboard-welcome p {
+  color: #697586;
+}
+
+/* Tarjetas de módulos */
+.dashboard-modules {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.module-card {
+  padding: 28px;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.module-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 9px 22px rgba(0, 0, 0, 0.10);
+}
+
+.module-icon {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.module-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.module-card p {
+  color: #697586;
+  line-height: 1.5;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 800px) {
+  .dashboard-modules {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .dashboard-container {
+    padding: 20px 12px;
+  }
+
+  .dashboard-modules {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header h1 {
+    font-size: 26px;
+  }
+}
